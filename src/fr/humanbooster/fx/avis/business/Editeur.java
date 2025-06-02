@@ -32,6 +32,6 @@ public class Editeur {
 
     public String toString() {
         return "Editeur " +
-                "[id=" + id + ", nom=" + nom + "]";
+                "[#id=" + id + ", nom= " + nom + "]";
     }
 }
