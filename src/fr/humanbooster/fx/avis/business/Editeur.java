@@ -6,7 +6,6 @@ public class Editeur {
     private String nom;
     private static Long compteur = 0L;
 
-    // Default constructor
     public Editeur() {
         this.id = compteur++;
     }
