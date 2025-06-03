@@ -7,7 +7,7 @@ public class Jeu {
     private Long id;
     private String nom;
     private LocalDate dateDeSortie;
-    private String Description;
+    private String description;
     private boolean possedeImage;
     private static Long compteur = 0L;
 
@@ -18,6 +18,12 @@ public class Jeu {
     public Jeu(String nom) {
         this();
         this.nom = nom;
+    }
+
+    public Jeu(String nom, LocalDate dateDeSortie, String description) {
+        this(nom);
+        this.dateDeSortie = dateDeSortie;
+        this.description = description;
     }
 
     public Long getId() {
@@ -45,11 +51,11 @@ public class Jeu {
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        description = description;
     }
 
     public boolean isPossedeImage() {
