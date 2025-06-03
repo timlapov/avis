@@ -54,7 +54,7 @@ public abstract class Utilisateur {
     }
 
     public String toString() {
-        return "Jeu " +
+        return "Utilisateur " +
                 "[#id=" + id + ", pseuo=" + pseudo + ", email=" + email+ "}";
     }
 
