@@ -6,7 +6,7 @@ public class Avatar {
     private static Long compteur = 0L;
 
     public Avatar() {
-        this.id = compteur++;
+        this.id = ++compteur;
     }
 
     public Avatar(String nom) {

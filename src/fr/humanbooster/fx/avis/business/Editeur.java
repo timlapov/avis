@@ -2,7 +2,7 @@ package fr.humanbooster.fx.avis.business;
 
 import java.util.Objects;
 
-public class Editeur {
+public class Editeur implements Comparable<Editeur> {
 
     private Long id;
     private String nom;
@@ -10,7 +10,7 @@ public class Editeur {
     private static Long compteur = 0L;
 
     public Editeur() {
-        this.id = compteur++;
+        this.id = ++compteur;
     }
 
     public Editeur(String nom, String Logo) {
@@ -43,12 +43,15 @@ public class Editeur {
         Logo = logo;
     }
 
+    /**
+     * On montre à Java comment comparer 2 objets éduteyrs : l'objet this et l'objet éditeur
+     * @param o the object to be compared.
+     * On décide de comparer les éditeurs sur leur nom
+     * @return
+     */
     @Override
-    public String toString() {
-        return "Editeur " +
-                "[#id=" + id +
-                ", nom= " + nom +
-                ", Logo=" + Logo + "]";
+    public int compareTo(Editeur o) {
+        return getNom().compareTo(o.getNom());
     }
 
     @Override
@@ -61,5 +64,13 @@ public class Editeur {
     @Override
     public int hashCode() {
         return Objects.hash(id, nom, Logo);
+    }
+
+    @Override
+    public String toString() {
+        return "Editeur " +
+                "[#id=" + id +
+                ", nom= " + nom +
+                ", Logo=" + Logo + "]";
     }
 }

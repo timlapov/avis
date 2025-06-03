@@ -1,9 +1,11 @@
+import fr.humanbooster.fx.avis.business.Editeur;
 import fr.humanbooster.fx.avis.business.Joueur;
 import fr.humanbooster.fx.avis.business.Moderateur;
 import fr.humanbooster.fx.avis.business.Utilisateur;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -33,6 +35,19 @@ public class Main {
             }
         }
 
-    }
+        Editeur editeur1 = new Editeur("Capcom", "capcom.jp");
+        Editeur editeur2 = new Editeur("Ubisoft", "ubusoft.jp");
+        Editeur editeur3 = new Editeur("Riot", "riot.jp");
 
+        ArrayList<Editeur> editeurs = new ArrayList<>();
+        editeurs.add(editeur1);
+        editeurs.add(editeur2);
+        editeurs.add(editeur3);
+
+        Collections.sort(editeurs);
+        System.out.println(editeurs);
+
+
+
+    }
 }

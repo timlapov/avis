@@ -7,7 +7,7 @@ public class Plateforme {
 
 // Default constructor
     public Plateforme() {
-        this.id = compteur++;
+        this.id = ++compteur;
     }
 
     public Plateforme(String nom) {

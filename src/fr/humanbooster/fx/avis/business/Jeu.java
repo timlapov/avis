@@ -12,7 +12,7 @@ public class Jeu {
     private static Long compteur = 0L;
 
     public Jeu() {
-        this.id = compteur++;
+        this.id = ++compteur;
     }
 
     public Jeu(String nom) {

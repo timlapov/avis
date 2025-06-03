@@ -12,7 +12,7 @@ public abstract class Utilisateur extends Object {
     private static Long compteur = 0L;
 
     public Utilisateur() {
-        this.id = compteur++;
+        this.id = ++compteur;
     }
 
     public Utilisateur(String pseudo, String motDePasse, String email) {
