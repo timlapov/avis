@@ -1,20 +1,23 @@
 package fr.humanbooster.fx.avis.business;
 
+import java.time.LocalDate;
+
 public class Jeu {
 
     private Long id;
     private String nom;
-    private String logo;
+    private LocalDate dateDeSortie;
+    private String Description;
+    private boolean possedeImage;
     private static Long compteur = 0L;
 
     public Jeu() {
         this.id = compteur++;
     }
 
-    public Jeu(String nom, String logo) {
+    public Jeu(String nom) {
         this();
         this.nom = nom;
-        this.logo = logo;
     }
 
     public Long getId() {
@@ -33,12 +36,28 @@ public class Jeu {
         this.nom = nom;
     }
 
-    public String getLogo() {
-        return logo;
+    public LocalDate getDateDeSortie() {
+        return dateDeSortie;
     }
 
-    public void setLogo(String logo) {
-        this.logo = logo;
+    public void setDateDeSortie(LocalDate dateDeSortie) {
+        this.dateDeSortie = dateDeSortie;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+    public boolean isPossedeImage() {
+        return possedeImage;
+    }
+
+    public void setPossedeImage(boolean possedeImage) {
+        this.possedeImage = possedeImage;
     }
 
     public static Long getCompteur() {
