@@ -52,5 +52,10 @@ public abstract class Utilisateur {
     public void setEmail(String email) {
         this.email = email;
     }
-    
+
+    public String toString() {
+        return "Jeu " +
+                "[#id=" + id + ", pseuo=" + pseudo + ", email=" + email+ "}";
+    }
+
 }
