@@ -1,6 +1,7 @@
 package fr.humanbooster.fx.avis.business;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public abstract class Utilisateur extends Object {
 
@@ -57,6 +58,18 @@ public abstract class Utilisateur extends Object {
     public String toString() {
         return "Utilisateur " +
                 "{#id=" + id + ", pseudo=" + pseudo + ", email=" + email+ "}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Utilisateur that = (Utilisateur) o;
+        return Objects.equals(id, that.id) && Objects.equals(pseudo, that.pseudo) && Objects.equals(motDePasse, that.motDePasse) && Objects.equals(email, that.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, pseudo, motDePasse, email);
     }
 
 }

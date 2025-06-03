@@ -11,6 +11,7 @@ public class Editeur {
     }
 
     public Editeur(String nom) {
+        this();
         this.nom = nom;
     }
 
