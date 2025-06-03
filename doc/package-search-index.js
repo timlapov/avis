@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"fr.humanbooster.fx.avis.business"},{"l":"fr.humanbooster.fx.avis.service"},{"l":"fr.humanbooster.fx.avis.service.impl"},{"l":"fr.humanbooster.fx.avis.util"}];updateSearchResults();
