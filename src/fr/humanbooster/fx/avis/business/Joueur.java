@@ -21,7 +21,7 @@ public class Joueur extends Utilisateur {
 
     @Override
     public String toString() {
-        return "Utilisateur " +
+        return "Joueur " +
                 "[#id=" + getId() + ", pseuo=" + getPseudo() + ", email=" + getEmail() +
                 ", dateDeNaissance=" + dateDeNaissance + "]";
     }
