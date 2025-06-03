@@ -6,9 +6,8 @@ public class Joueur extends Utilisateur {
 
     private LocalDate dateDeNaissance ;
 
-    public Joueur(String pseudo, String motDePasse, String email, LocalDate dateDeNaissance) {
+    public Joueur(String pseudo, String motDePasse, String email) {
         super(pseudo, motDePasse, email);
-        this.dateDeNaissance = dateDeNaissance;
     }
 
     public LocalDate getDateDeNaissance() {
@@ -21,8 +20,8 @@ public class Joueur extends Utilisateur {
 
     @Override
     public String toString() {
-        return "Joueur " +
-                "[#id=" + getId() + ", pseuo=" + getPseudo() + ", email=" + getEmail() +
-                ", dateDeNaissance=" + dateDeNaissance + "]";
+        return "Joueur [" +
+                super.toString() +
+                "]";
     }
 }

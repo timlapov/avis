@@ -2,7 +2,7 @@ package fr.humanbooster.fx.avis.business;
 
 import java.time.LocalDate;
 
-public abstract class Utilisateur {
+public abstract class Utilisateur extends Object {
 
     private Long id;
     private String pseudo;
@@ -53,9 +53,10 @@ public abstract class Utilisateur {
         this.email = email;
     }
 
+    @Override
     public String toString() {
         return "Utilisateur " +
-                "[#id=" + id + ", pseudo=" + pseudo + ", email=" + email+ "}";
+                "{#id=" + id + ", pseudo=" + pseudo + ", email=" + email+ "}";
     }
 
 }

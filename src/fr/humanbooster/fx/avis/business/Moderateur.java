@@ -19,7 +19,6 @@ public class Moderateur extends Utilisateur {
 
     @Override
     public String toString() {
-        return "Moderateur [id=" + getId() + ", pseudo=" + getPseudo() + ", email=" + getEmail()
-                + ", numeroDeTelephone=" + numeroDeTelephone + "]";
+        return "Moderateur [" + super.toString() + ", numeroDeTelephone=" + numeroDeTelephone + "]";
     }
 }
